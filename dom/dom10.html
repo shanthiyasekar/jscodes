@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Input radius value and get the volume of a sphere</p>
+    Radius:<input type="text" id="num" name="radius" value=""><br>
+    volume:<input type="text" id="volume" name="vol" value=""><br>
+    <input type="submit" value="calculate" onclick="calculate()">
+    <script>
+        function calculate()
+        {   
+            let x=document.getElementById("num").value;
+            let v=(4/3) * Math.PI * Math.pow(x, 3);
+            v=v.toFixed(4);
+            document.getElementById("volume").value=v;
+           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="mytable">
+        <tr>
+            <td>row1 cell1</td>
+            <td>row1 cell2</td>
+        </tr>
+        <tr>
+            <td>row2 cell1</td>
+            <td>row2 cell2</td>
+        </tr>
+    </table>
+    <input type="button" onclick="changecontent()" value="change content">
+    <script>
+        function changecontent()
+        {
+            let rn=prompt("enter the row number(0,1,2)");
+            let cn=prompt("enter the col no(0,1)");
+            let content=prompt("enter the content");
+            let x=document.getElementById("mytable").rows[parseInt(rn)].cells;
+            // document.write(x);
+            console.log(x);
+            x[parseInt(cn)].innerHTML=content;
+        }
+    </script>
+</body>
+</html>

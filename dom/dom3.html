@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="d" value="Click to set paragraph background color" onclick="set_background()">
+    <div >
+        <p>w3resource JavaScript Exercises</p>
+        <p>w3resource PHP Exercises</p>  
+    </div>
+    <script>
+       function set_background()
+        {
+            document.getElementById("d").style.backgroundColor="red";
+            /*
+           let element=document.getElementsByTagName("p");
+           element[0].style.backgroundColor="red";
+           element[1].style.backgroundColor="red";*/
+        }
+        
+    </script>
+</body>
+</html>
