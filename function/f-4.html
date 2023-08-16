@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(str)
+        {
+            let a=str.split(' ');
+            document.write(a);
+            let ans;
+            let max=0;
+            for(let i=0;i<a.length;i++)
+            {
+                let b=a[i].length;
+                if(b>max)
+                {
+                    max=b;
+                    ans=a[i];
+                }
+            }
+            return ans;
+        }
+        console.log(check("Web Development Tutorial"));
+    </script>
+</body>
+</html>

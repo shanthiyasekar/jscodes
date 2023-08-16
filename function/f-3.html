@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generate(str)
+        {
+            let tempArr = [];
+            let resultArr = [];
+            for (let i = 0; i < str.length; i++) 
+            {
+                tempArr = [str[i]];
+                /*document.write("first"+i+" ");
+                document.write(tempArr+"\n");*/
+                let index = 0;
+                while (resultArr[index])
+                {
+                    tempArr.push("" + resultArr[index] + str[i]);
+                   // document.write(tempArr);
+                    index++;
+                }
+                resultArr = resultArr.concat(tempArr);
+                document.write(resultArr);
+            }
+            return resultArr;
+           /* for(let i=0;i<str.length;i++)
+            {   let s="";
+                for(let j=i;j<str.length;j++)
+                {
+                      s=s+str[j];
+                      document.write(s);
+                      document.write(" ");  
+                }
+            }*/
+            
+        }
+        console.log(generate("dog"));
+    </script>
+</body>
+</html>

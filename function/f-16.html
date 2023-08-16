@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function unique(str)
+        {
+            let uni="";
+            for(let i=0;i<str.length;i++)
+            {
+                if(uni.indexOf(str.charAt(i))==-1)
+                    uni+=str[i];
+            }
+            return uni;
+        }
+        console.log(unique("thequickbrownfoxjumpsoverthelazydog"));
+    </script>
+</body>
+</html>
