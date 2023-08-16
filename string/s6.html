@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(input,str)
+        {
+            var index = input.length - str.length;
+            document.write(input.lastIndexOf(str));
+            return index>=0&&(input.lastIndexOf(str)==index);
+        }
+        console.log(check('JS string exercises', 'exercises'));
+        console.log(check('Java Script','Script'));
+    </script>
+</body>
+</html>

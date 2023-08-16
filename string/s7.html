@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function camelize(str) {
+        const words = str.split(/[\s_-]/);
+        const camelizedWords = [];
+    
+        for (let i = 0; i < words.length; i++) {
+            const word = words[i].toLowerCase();
+            if (i !== 0) {
+                camelizedWords.push(word.charAt(0).toUpperCase() + word.slice(1));
+            } else {
+                camelizedWords.push(word);
+            }
+        }
+    
+        return camelizedWords.join('');
+    }
+    
+    console.log(camelize("JavaScript Exercises"));
+    console.log(camelize("JavaScript exercises"));
+    console.log(camelize("JavaScriptExercises"));
+</script>
+    
+</body>
+</html>
