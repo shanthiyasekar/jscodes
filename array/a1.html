@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(input)
+        {
+            document.write(toString.call(input));
+            if(toString.call(input)==="[object Array]")
+                return true;
+            return false;
+        }
+        console.log(check("hi"));
+        console.log(check([1,2,3,4]));
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function upper_lower(str)
+        {
+            let res=[];
+            let a="ABCDEFGIJKLMNOPQRSTUVWXYZ";
+            let b="abcdefghijklmnopqrstuvwxyz";
+            for(let i=0;i<str.length;i++)
+            {
+                if(a.indexOf(str[i])!=-1)
+                    res.push(str[i].toLowerCase());
+                else if(b.indexOf(str[i])!==1)
+                    res.push(str[i].toUpperCase());
+            }
+            document.write(res.join(''));
+        }
+        upper_lower("The Quick Brown Fox");
+    </script>
+</body>
+</html>

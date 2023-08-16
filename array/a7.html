@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function  sorty(arr)
+        {
+            let swap=false;
+            for(let i=0;i<arr.length-1;i++)
+            {
+                swap=false;
+                for(let j=i+1;j<arr.length;j++)
+                {
+                    if(arr[i]>arr[j])
+                    {
+                        let temp=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=temp;
+                        swap=true;
+                    }
+                }
+                if(swap==false)
+                    break;
+            }
+            for(let i=0;i<arr.length;i++){
+                document.write(arr[i]+" ");
+                document.write("<br>");
+            }
+        }  
+        sorty([53,32,19,48,25,56]);
+        sorty([-3,8,7,6,5,-4,3,2,1]);
+    </script>
+</body>
+</html>
