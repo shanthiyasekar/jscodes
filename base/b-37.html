@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const produce_new_string=(str)=>
+        {
+            if(str.length<3)
+                return str.toUpperCase();
+            str=str.substring(0,3).toLowerCase()+str.substring(3);
+            return str;
+        }
+        console.log(produce_new_string("Python"));
+console.log(produce_new_string("Py"));
+console.log(produce_new_string("JAVAScript"));
+    </script>
+</body>
+</html>

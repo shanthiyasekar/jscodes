@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(str)
+        {
+            //return (/a...b/).test(str)||(/b...a/).test(str);
+
+            let a=str.indexOf('a');
+            let b=str.indexOf('b');
+            //document.write(a);
+            //document.write(b);
+            let res;
+            if(b>a)
+                res=b-a-1;
+            else
+                res=a-b-1;
+           
+            //document.write(res);
+            if(res==3)
+                return true;
+            return false;
+        }
+        const res=check("Chainsbreak");
+        console.log(check("pane borrowed"));
+ console.log(check("abCheck"));
+        document.write(res);
+    </script>
+</body>
+</html>

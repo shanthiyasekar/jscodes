@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(a,b,c)
+        {
+            if(a>=20)
+                return (a<b||a<c);
+            else if(b>=20)
+                return (b<a||b<c);
+            else if(c>=20)
+                return (c<a||c<b);
+        }
+        console.log(check(23, 45, 10));
+console.log(check(23, 23, 10));
+console.log(check(21, 66, 75));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getstring(str)
+        {
+            if(str.length>=3)
+            {
+                let a=str.length-3;
+                return (str.slice(a)+str.substring(0,a));
+            }
+            return str;
+
+        }
+        console.log(getstring("Python"));
+        console.log(getstring("JavaScript"));
+        console.log(getstring("Hi"));
+    </script>
+</body>
+</html>

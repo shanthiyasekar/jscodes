@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ismulti(num)
+        {
+            return (num%7==0||num%11==0);
+        }
+        const check=(a,b)=>
+        {
+            const n1=ismulti(a);
+            const n2=ismulti(b);
+            if((n1&&!n2)||(!n1&&n2))
+                return true;
+            else    
+                return false; 
+            
+        }
+        console.log(check(14, 22));
+console.log(check(14, 20));
+console.log(check(16, 20));
+    </script>
+</body>
+</html>

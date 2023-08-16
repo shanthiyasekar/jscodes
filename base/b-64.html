@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function remove(str1,str2)
+        {
+            let a1=str1.length;
+            let a2=str2.length;
+            if(a1===a2)
+            {
+                return str1+str2;
+            }
+            else if(a1>a2)
+            {
+                return str1.substring(a1-a2)+str2;
+            }
+            else{
+                return str1+str2.substring(a2-a1)   ;
+            }
+
+        }
+        console.log(remove("Python","JS"));
+        console.log(remove("ab", "cdef"));
+    </script>
+</body>
+</html>

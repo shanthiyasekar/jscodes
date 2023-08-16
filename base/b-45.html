@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test_number(n1,n2)
+        {
+            if(n1===15||n2===15)
+                return true;
+            else if(n1+n2===15)
+                return true;
+            else if(n1>n2)
+            {
+                if(n1-n2===15)
+                    return true;
+                else
+                    return false;
+            }
+            else{
+                if(n2-n1===15)
+                    return true;
+                else    
+                    return false;
+            }
+        }
+
+console.log(test_number(15, 9));
+console.log(test_number(25, 15));
+console.log(test_number(7, 8));
+console.log(test_number(25, 10));
+console.log(test_number(5, 9));
+console.log(test_number(7, 9));
+console.log(test_number(9, 25));
+    </script>
+</body>
+</html>

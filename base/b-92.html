@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maxadjacent(arr)
+        {
+            let max=0;
+            for(let i=1;i<arr.length;i++)
+            {
+                let ans=Math.abs(arr[i]-arr[i-1]);
+                if(ans>max)
+                {
+                    ans=max;
+                }
+            }
+            return ans;
+        }
+        console.log([1,2,3,8,9]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function divide(dividend, divisor) {
+        if (divisor === 0) {
+            return "Cannot divide by zero";
+        }
+    
+        const result = dividend / divisor;
+        return result.toString();
+    }
+    
+    const dividend = 10;
+    const divisor = 2;
+    
+    const resultString = divide(dividend, divisor);
+    document.write(resultString); // Outputs: "5"
+    </script>
+   
+    
+</body>
+</html>

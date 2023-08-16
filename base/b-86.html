@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ident(a)
+        {
+            if(a<90)
+                return "Acute Angle";
+            else if(a===90)
+                return "Right angle";
+            else if(a<180)
+                return "Obtuse angle";
+            else
+                return "Straight angle";
+        }
+        console.log(ident(47));
+        console.log(ident(90));
+        console.log(ident(145));
+        console.log(ident(180));
+        
+    </script>
+</body>
+</html>

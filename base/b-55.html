@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const checkpt=(str)=>
+        {
+            let cp=0,ct=0;
+            for(let i=0;i<str.length;i++)
+            {
+                if(str[i]==='p')
+                    cp++;
+                else if(str[i]==='t')
+                    ct++;
+            }
+            if(cp===ct)
+                return true;
+            else
+                return false;
+        }
+        const res=checkpt("paatpss");
+        const res1=checkpt("paatps");
+        document.write(res);
+        document.write(res1);
+    </script>
+</body>
+</html>

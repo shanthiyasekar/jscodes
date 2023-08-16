@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program to replace all the numbers with a specified 
+number of a given array of integers.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function arrayreplace(arr)
+        {
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i]==oldvalue)
+                    arr[i]=newvalue;
+            }
+            return arr;
+        }
+        let arr=[1,2,3,2,2,8,1,9];
+        var oldvalue=2;
+        var newvalue=5;
+        console.log(arrayreplace(arr,oldvalue,newvalue));
+        
+    </script>
+</body>
+</html>

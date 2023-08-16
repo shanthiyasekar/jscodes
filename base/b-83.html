@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longeststring(arr)
+        {
+            /*let maxi=0;
+            let ans;
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i].length>maxi)
+                {
+                    maxi=arr[i].length;
+                    ans=arr[i];
+                }
+            }
+            return ans;*/
+
+            let max=arr[0].length;
+            arr.map(e=>max=Math.max(max,e.length));
+            let res=arr.filter(e=>e.length==max);
+            return res;
+        }
+        console.log(longeststring(['a','aa','aaa','aaaaaaaaa','aaaaa','aaaa']));
+    </script>
+</body>
+</html>

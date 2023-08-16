@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkstring(str)
+        {
+            if(str.length>=3&&str.substring(0,3)==="New"||str.substring(0,3)==="Los")
+                return str;
+            else    
+                return '';
+        }
+        console.log(checkstring("New York"));
+        console.log(checkstring("Los Angeles"));
+        console.log(checkstring("London"));
+    </script>
+</body>
+</html>    
