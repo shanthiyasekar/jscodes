@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const printfrequency=(str)=>
+        {
+            let res={};
+            str=str.split("").sort();
+            document.write(str);
+            let count=1;
+            let i;
+            for(i=1;i<str.length;i++)
+            {
+                if(str[i]==str[i-1])
+                    count++;
+                else{
+                    //res.push(count);
+                    res[str[i-1]]=count;
+                    count=1;
+                }
+            }
+            //res.push(count);
+           res[str[i-1]]=count;
+            return res;
+        }
+        console.log(printfrequency("adsjfdsfsfjsdjfhacabcsbajda"));
+        
+    </script>
+</body>
+</html>
